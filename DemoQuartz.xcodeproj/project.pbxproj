@@ -21,6 +21,10 @@
 		53DDC37D191F5E3B00BAE574 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DDC35F191F5E3A00BAE574 /* UIKit.framework */; };
 		53DDC385191F5E3B00BAE574 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53DDC383191F5E3B00BAE574 /* InfoPlist.strings */; };
 		53DDC387191F5E3B00BAE574 /* DemoQuartzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC386191F5E3B00BAE574 /* DemoQuartzTests.m */; };
+		53DDC393191F5ECF00BAE574 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC391191F5ECF00BAE574 /* HomeViewController.m */; };
+		53DDC398191F5EDB00BAE574 /* DrawColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC397191F5EDB00BAE574 /* DrawColorView.m */; };
+		53DDC39A191F5F8100BAE574 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DDC399191F5F8100BAE574 /* HomeViewController.xib */; };
+		53DDC39D191F5FCF00BAE574 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC39C191F5FCF00BAE574 /* UIColor+RandomColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		53DDC382191F5E3B00BAE574 /* DemoQuartzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoQuartzTests-Info.plist"; sourceTree = "<group>"; };
 		53DDC384191F5E3B00BAE574 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53DDC386191F5E3B00BAE574 /* DemoQuartzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoQuartzTests.m; sourceTree = "<group>"; };
+		53DDC390191F5ECF00BAE574 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		53DDC391191F5ECF00BAE574 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		53DDC395191F5EDB00BAE574 /* DemoColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoColorDefine.h; sourceTree = "<group>"; };
+		53DDC396191F5EDB00BAE574 /* DrawColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawColorView.h; sourceTree = "<group>"; };
+		53DDC397191F5EDB00BAE574 /* DrawColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawColorView.m; sourceTree = "<group>"; };
+		53DDC399191F5F8100BAE574 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		53DDC39B191F5FCF00BAE574 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
+		53DDC39C191F5FCF00BAE574 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +130,15 @@
 				53DDC370191F5E3A00BAE574 /* ViewController.h */,
 				53DDC371191F5E3A00BAE574 /* ViewController.m */,
 				53DDC373191F5E3A00BAE574 /* Images.xcassets */,
+				53DDC390191F5ECF00BAE574 /* HomeViewController.h */,
+				53DDC391191F5ECF00BAE574 /* HomeViewController.m */,
+				53DDC399191F5F8100BAE574 /* HomeViewController.xib */,
+				53DDC395191F5EDB00BAE574 /* DemoColorDefine.h */,
+				53DDC396191F5EDB00BAE574 /* DrawColorView.h */,
+				53DDC397191F5EDB00BAE574 /* DrawColorView.m */,
 				53DDC362191F5E3A00BAE574 /* Supporting Files */,
+				53DDC39B191F5FCF00BAE574 /* UIColor+RandomColor.h */,
+				53DDC39C191F5FCF00BAE574 /* UIColor+RandomColor.m */,
 			);
 			path = DemoQuartz;
 			sourceTree = "<group>";
@@ -231,6 +251,7 @@
 				53DDC374191F5E3A00BAE574 /* Images.xcassets in Resources */,
 				53DDC366191F5E3A00BAE574 /* InfoPlist.strings in Resources */,
 				53DDC36F191F5E3A00BAE574 /* Main.storyboard in Resources */,
+				53DDC39A191F5F8100BAE574 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +273,9 @@
 				53DDC372191F5E3A00BAE574 /* ViewController.m in Sources */,
 				53DDC36C191F5E3A00BAE574 /* AppDelegate.m in Sources */,
 				53DDC368191F5E3A00BAE574 /* main.m in Sources */,
+				53DDC393191F5ECF00BAE574 /* HomeViewController.m in Sources */,
+				53DDC39D191F5FCF00BAE574 /* UIColor+RandomColor.m in Sources */,
+				53DDC398191F5EDB00BAE574 /* DrawColorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
