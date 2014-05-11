@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "DemoColorDefine.h"
 #import "DrawColorView.h"
+#import "UIColor+RandomColor.h"
 
 @interface HomeViewController ()
 
@@ -29,12 +30,44 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.contentView addObserver:self
+                       forKeyPath:@"currColor"
+                          options:NSKeyValueObservingOptionNew
+                          context:nil];
+    
+    [NSTimer scheduledTimerWithTimeInterval:3
+                                     target:self
+                                   selector:@selector(timerHandler)
+                                   userInfo:nil
+                                    repeats:YES];
+}
+
+- (void)dealloc
+{
+    [self.contentView removeObserver:self forKeyPath:@"currColor"];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context
+{
+    if (object == self.contentView && [keyPath isEqualToString:@"currColor"]) {
+        UIColor* color = [change objectForKey:NSKeyValueChangeNewKey];
+        NSLog(@"observeValueForKeyPath Invoked, Color:%@", color);
+        [self.contentView setNeedsDisplay];
+    }
+}
+
+- (void)timerHandler
+{
+    self.contentView.currColor = [UIColor randomColor];
 }
 
 - (IBAction)colorChanged:(id)sender
