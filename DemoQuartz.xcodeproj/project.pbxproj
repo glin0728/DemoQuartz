@@ -25,6 +25,7 @@
 		53DDC398191F5EDB00BAE574 /* DrawColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC397191F5EDB00BAE574 /* DrawColorView.m */; };
 		53DDC39A191F5F8100BAE574 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DDC399191F5F8100BAE574 /* HomeViewController.xib */; };
 		53DDC39D191F5FCF00BAE574 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC39C191F5FCF00BAE574 /* UIColor+RandomColor.m */; };
+		53DDC39F191F631600BAE574 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DDC39E191F631600BAE574 /* iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		53DDC399191F5F8100BAE574 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		53DDC39B191F5FCF00BAE574 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
 		53DDC39C191F5FCF00BAE574 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
+		53DDC39E191F631600BAE574 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				53DDC363191F5E3A00BAE574 /* DemoQuartz-Info.plist */,
+				53DDC39E191F631600BAE574 /* iphone.png */,
 				53DDC364191F5E3A00BAE574 /* InfoPlist.strings */,
 				53DDC367191F5E3A00BAE574 /* main.m */,
 				53DDC369191F5E3A00BAE574 /* DemoQuartz-Prefix.pch */,
@@ -250,6 +253,7 @@
 			files = (
 				53DDC374191F5E3A00BAE574 /* Images.xcassets in Resources */,
 				53DDC366191F5E3A00BAE574 /* InfoPlist.strings in Resources */,
+				53DDC39F191F631600BAE574 /* iphone.png in Resources */,
 				53DDC36F191F5E3A00BAE574 /* Main.storyboard in Resources */,
 				53DDC39A191F5F8100BAE574 /* HomeViewController.xib in Resources */,
 			);

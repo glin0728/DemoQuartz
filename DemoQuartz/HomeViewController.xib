@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
                 <outlet property="colorSegment" destination="dAE-4o-6jg" id="NTN-Le-QRE"/>
+                <outlet property="contentView" destination="eEn-Le-bSs" id="cqg-rN-fxW"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -61,6 +62,11 @@
                         <barButtonItem width="40" style="plain" systemItem="fixedSpace" id="t5k-2B-pOe"/>
                     </items>
                 </toolbar>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEn-Le-bSs" customClass="DrawColorView">
+                    <rect key="frame" x="0.0" y="61" width="320" height="375"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
